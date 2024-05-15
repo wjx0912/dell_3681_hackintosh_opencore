@@ -1,5 +1,3 @@
-opencore-0.8.7，只测试了mac-12.6（Ventura），其它版本mac只能自己解决了
-
 
 
 dell 3681 系统（只有cpu，内存，硬盘更换）
@@ -40,6 +38,12 @@ cpu：1190（淘宝，拿到是钎焊版，运气不错） ，
 
 
 
+
+
+# 系统一：mac-12.6 (Ventura), opencore-0.8.7
+
+
+
 1.目前：有线，无线，声卡，显卡都正常
 
 2.如果要更改启动等待时间，config.plist的TakeoffDelay字段，默认是3
@@ -55,3 +59,11 @@ https://apple.sqlsec.com/6-实用姿势/6-1.html
 usb必须配置好（测试时：鼠标接2.0口，usb3的u盘接3.0口）
 
 5.多系统：windows，macos共存：
+
+
+# 系统二：mac-14.5 (Sonoma), opencore-0.9.7
+
+来自：https://github.com/xiaoming-crypto/dell-vostro-3681-efi
+请关注这个项目，这里这是备份而已
+
+
