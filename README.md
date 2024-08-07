@@ -1,69 +1,41 @@
 
 
-dell 3681 系统（只有cpu，内存，硬盘更换）
+dell 3681
 
 |          |                                                      |
-| -------- | ---------------------------------------------------- 
+| -------- | ---------------------------------------------------- |
 | cpu      | intel 10700（8C/16T, 缓存16M，65瓦）                 |
 | 主板     | 戴尔0MRC1X（LPC Controller B460芯片组）bios2020.5.14 |
 | 内存     | 芝奇DDR4 2666， 单条32G，两条共64G                   |
-|          |   |
-| 主要硬盘 | 七彩虹CN700 1T（M.2 nvme pcie4）                     |
-| 次要硬盘 | 三星SSD 870 QVO固态 2T（2.5寸sata）                  |
-| 备用硬盘 | 希捷5T机械硬盘（2.5寸sata）                          |
 |          |                                                      |
-| 无线网卡 | 英特尔 Wireless-AC 3165 802.11ac 1x1 + 蓝牙 4.2      |
+| 主要硬盘 | HP 2T（M.2接口）                                     |
+| 次要硬盘 | 三星SSD 870 QVO固态 2T（2.5寸sata）                  |
+|          |                                                      |
 | 有线网卡 | Realtek RTL8111HS                                    |
 | 集成显卡 | intel UHD Graphics 630                               |
 
 
 
-![1.config](./picture/1.config.png)
-
-
-
-dell 3681准系统（sff机箱），588元（闲鱼买的，机箱，电源，主板，散热器） ，
-
-只有一个sata电源线，淘宝十块钱买个sata电源一分二， 无线网卡有线网卡和蓝牙都是主板自带的，
-
-cpu：1190（淘宝，拿到是钎焊版，运气不错） ，
-
-七彩虹1T：450元（天猫） ，
-
-内存和其他硬盘是老机器拆的，整机差不多4500左右，
-
-
-
-![2.diskgenius](./picture/2.diskgenius.png)
-
-
+bios关闭secure boot，以及SATA模式从默认的Raid on改为AHCI
 
 
 
 # 系统一：mac-12.6 (Ventura), opencore-0.8.7
 
+有线，声卡，usb，HDMI 输出都正常；
+
+无线和蓝牙：网上买的94360z4（m2接口），免驱；
+
+作为主力开发机，撸代码 2 年了，非常稳定
 
 
-1.目前：有线，无线，声卡，显卡都正常
-
-2.如果要更改启动等待时间，config.plist的TakeoffDelay字段，默认是3
-
-3.bios关闭secure boot，以及SATA模式从默认的Raid on改为AHCI
-
-4.问题比较大的是usb，启动可能报错：
-
-AppleUSBHostPort::enumerateDeviceComplete_block_invoke: enumeration failed
-
-https://apple.sqlsec.com/6-实用姿势/6-1.html
-
-usb必须配置好（测试时：鼠标接2.0口，usb3的u盘接3.0口）
-
-5.多系统：windows，macos共存：
 
 
-# 系统二：mac-14.5 (Sonoma), opencore-0.9.7
+# 系统二：mac-14.6 (Sonoma), opencore-1.0.0
 
-来自：https://github.com/xiaoming-crypto/dell-vostro-3681-efi
-请关注这个项目，这里这是备份而已
+由于mac放弃了94360系列所以闲鱼卖了了，换成ax210（m2接口，外置天线，半高挡板，淘宝 80 块钱买的）；
 
+目前所有硬件正常（有线，usb，前后面板音频，HDMI输出，wifi，蓝牙）；
+
+已经撸代码一段时间了，也是稳定的一批
 
