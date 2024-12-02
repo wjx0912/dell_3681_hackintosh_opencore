@@ -37,7 +37,7 @@ bios关闭secure boot（secure boot mode改为Audio Mode），以及SATA模式�
 
 目前所有硬件正常（有线网卡，前后usb，前后面板音频，HDMI输出，wifi，蓝牙）；
 
-已经撸代码一段时间了，也是稳定的一批
+已经撸代码一段时间了，也是稳定的一批。更换三码看这里：https://www.cnblogs.com/wjx0912/p/18575259
 
 
 
