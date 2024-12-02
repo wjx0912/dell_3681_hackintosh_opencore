@@ -16,7 +16,7 @@ dell 3681
 
 
 
-bios关闭secure boot（secure boot mode改为Audio Mode），以及SATA模式从默认的Raid on改为AHCI
+bios关闭secure boot，另外secure boot mode改为Audio Mode；以及SATA模式从默认的Raid on改为AHCI
 
 
 
